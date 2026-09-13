@@ -1,3 +1,12 @@
+from fastapi import FastAPI, Query, Request
+from fastapi.responses import JSONResponse
+from starlette.exceptions import HTTPException as StarletteHTTPException
+import duckdb
+from huggingface_hub import HfFileSystem
+
+app = FastAPI()
+
+# ... बाकी कोड वैसा ही रहेगा
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 import duckdb
